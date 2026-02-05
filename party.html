@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Party Mode 🎉</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      animation: partyBackground 2s infinite linear;
+    }
+
+    @keyframes partyBackground {
+      0%   { background-color: #ff005d; }
+      20%  { background-color: #fffd38; }
+      40%  { background-color: #00eaff; }
+      60%  { background-color: #8cff00; }
+      80%  { background-color: #a100ff; }
+      100% { background-color: #ff005d; }
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* 🔗 Top-left links area */
+    .links {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .links a:hover {
+      transform: scale(1.05);
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔗 Links go here -->
+  <div class="links">
+    <a href="angryparty.html">Leave Party Mode</a>
+  </div>
+
+  <h1>🎉 PARTY MODE 🎉</h1>
+
+</body>
+</html>

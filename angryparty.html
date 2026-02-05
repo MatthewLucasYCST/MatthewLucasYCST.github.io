@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Party Mode 🎉</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      animation: partyBackground 2s infinite linear;
+      overflow: hidden;
+    }
+
+    @keyframes partyBackground {
+      0%   { background-color: #ff005d; }
+      20%  { background-color: #fffd38; }
+      40%  { background-color: #00eaff; }
+      60%  { background-color: #8cff00; }
+      80%  { background-color: #a100ff; }
+      100% { background-color: #ff005d; }
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* 🔗 Top-left links */
+    .links {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    /* 😡 ANGRY PARTY MODE WARNING */
+    .angry-warning {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff0000;
+      color: white;
+      padding: 20px 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+      text-shadow: 0 0 10px black;
+      z-index: 999;
+      animation: shake 0.4s infinite, pulseRed 1s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(-50%) translateY(0); }
+      25% { transform: translateX(-50%) translateY(-2px); }
+      50% { transform: translateX(-50%) translateY(2px); }
+      75% { transform: translateX(-50%) translateY(-2px); }
+      100% { transform: translateX(-50%) translateY(0); }
+    }
+
+    @keyframes pulseRed {
+      0% { background-color: #ff0000; }
+      50% { background-color: #b00000; }
+      100% { background-color: #ff0000; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="links">
+    <a href="youcantleave.html">Are You Sure You Wanna Leave</a>
+  </div>
+
+  <h1>🎉 PARTY MODE 🎉</h1>
+
+  <!-- 😡 YOU CANNOT ESCAPE -->
+  <div class="angry-warning">
+    😡😠 YOU CAN’T LEAVE PARTY MODE 😠😡
+  </div>
+
+</body>
+</html>
